@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Admission Data Mining</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Hospital Admission Data Mining</h1>
+
+    <p>Discover patterns in patient admission data: track patient age, disease, and admission days.</p>
+
+    <form id="patientForm">
+        <input type="number" id="patientId" placeholder="Patient ID" required>
+        <input type="number" id="age" placeholder="Age" required>
+        <input type="text" id="disease" placeholder="Disease" required>
+        <input type="number" id="admissionDays" placeholder="Admission Days" required>
+        <button type="submit">Add Patient</button>
+    </form>
+
+    <table id="patientTable">
+        <thead>
+            <tr>
+                <th>Patient ID</th>
+                <th>Age</th>
+                <th>Disease</th>
+                <th>Admission Days</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- User input rows appear here -->
+        </tbody>
+    </table>
+
+    <h2>Admission Days Chart</h2>
+    <canvas id="admissionChart" width="400" height="200"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
